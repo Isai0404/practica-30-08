@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practica 30 agosto</title>
 </head>
 <body>
-    
+    <h1>tablas.html</h1>
+    <!---tablas simples-->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Carrera</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>LTI</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>LA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>LIA</td>
+        </tr>
+    </table>
+    <!--tr sirve para los renglones
+        td sive para los datos
+        th sirve para los encabezados
+        table sirve para la estructura de la tabla-->
+    <hr>
+    <!--Tabla con celdas combinadas-->
+    <table border="1">
+        <tr>
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>7:00 am a 8:00 am</td>
+            <td> natacion</td>
+            <td>progra</td>
+            <td colspan="3">-</td>
+        </tr>
+        <tr>
+            <td>8:00 am a 9:00 am</td>
+            <td rowspan="2">natacion</td>
+            <td>progra</td>
+            <td colspan="3">web</td>
+        </tr>
+        <!--colspan sirve para conbiar las celdas -->
+    </table>
+    <hr>
+    <!--Tabla con etiquetas tbody, theard, tfoot-->
+    <table border="1">
+        <thead>
+            <th colspan="6"> mi Horario</th>
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7:00 am a 8:00 am</td>
+                <td> natacion</td>
+                <td>progra</td>
+                <td colspan="3">-</td>
+            </tr>
+            <tr>
+                <td>8:00 am a 9:00 am</td>
+                <td rowspan="2">natacion</td>
+                <td>progra</td>
+                <td colspan="3">web</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="6">fecha de elaboracion 30 de agosto 2023</td>
+        </tfoot>
+        <!--colspan sirve para conbiar las columnas -->
+    </table>
 </body>
 </html>
